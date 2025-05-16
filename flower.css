@@ -336,82 +336,21 @@ body{
 }
 
 @media screen and (max-width: 700px) {
-  body {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 5vh;
-    overflow-y: auto;
-  }
-
-  .message {
-    width: 95vw;
-    max-width: 95vw;
-    font-size: 16px;
-    right: auto;
-    bottom: 5%;
-    position: relative;
-    text-align: center;
-    left: 0;
-    margin: 0 auto 1rem;
-  }
-
   .flower {
     width: 98vw;
     max-width: 700px;
-    height: auto;
-    position: relative;
     margin: 1rem auto 0;
-    transform: none !important;
   }
-
   .flower_glass {
     width: 90vw;
-    max-width: 350px;
-    height: 120vw;
-    max-height: 400px;
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+    max-width: 700px;   /* Match the new max width */
+    height: 140vw;
+    max-height: 500px;
+    /* Adjust the polygon for better proportions on mobile: */
+    clip-path: polygon(10% 0, 90% 0, 80% 100%, 20% 100%);
     opacity: 0.8;
     position: relative;
-  }
-
-  .flower_glass::before {
-    height: 45vw;
-    max-height: 150px;
-  }
-
-  .flower_glass::after {
-    height: 6vw;
-    max-height: 20px;
-  }
-
-  .f-wrapper,
-  .f-wrapper--2,
-  .f-wrapper--3 {
-    position: absolute;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-  }
-  .f-wrapper  { top: 18vw; }
-  .f-wrapper--2 { top: 36vw; }
-  .f-wrapper--3 { top: 54vw; }
-
-  .flower_line,
-  .f-wrapper--2 .flower_line,
-  .f-wrapper--3 .flower_line {
-    height: 60vw !important;
-    max-height: 260px;
-  }
-
-  .flower_leaf,
-  .leaf-1,
-  .leaf-8 {
-    width: 10vw !important;
-    height: 24vw !important;
-    max-width: 90px;
-    max-height: 140px;
+    margin: 0 auto;
+    display: block;
   }
 }
